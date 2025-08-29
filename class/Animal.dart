@@ -16,6 +16,11 @@ class Cachorro extends Animal {
   void latir() {
     print("O cachorro está latindo.");
   }
+
+  @override
+  void dormir() {
+    print("O cachorro está dormindo profundamente."); // Sobrescrevendo o método dormir da classe Animal
+  }
 }
 
 class Gato extends Animal {
@@ -40,5 +45,6 @@ void main() {
   gato.comer();
   gato.dormir();
   gato.miar();
+
 }
 
